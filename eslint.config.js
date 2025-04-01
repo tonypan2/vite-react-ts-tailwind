@@ -13,9 +13,12 @@ import reactDom from "eslint-plugin-react-dom";
 export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
-  { ignores: ["dist"] },
+  {
+    ignores: ["dist", "**/._*"],
+  },
   {
     files: ["**/*.{ts,tsx}"],
+    ignores: ["._*"],
     extends: [
       js.configs.recommended,
       ...tseslint.configs.strictTypeChecked,

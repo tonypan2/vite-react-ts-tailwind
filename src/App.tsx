@@ -1,5 +1,8 @@
 import "./App.css";
 
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function App() {
   return (
     <>
@@ -13,8 +16,9 @@ function App() {
           hover:bg-green-500/70 hover:text-white
         `}
       >
+        <FontAwesomeIcon icon={faCoffee} />
         <span
-          data-before="Send message"
+          data-before="Drink Coffee"
           className={`
             relative inline-block py-1.5 transition-transform
             group-hover:-translate-y-full
